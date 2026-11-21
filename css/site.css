@@ -31,6 +31,14 @@ body{background:var(--navy);color:var(--cream);font-family:'EB Garamond',Georgia
 .pr .n{font:400 13px/1 'Cinzel',serif;letter-spacing:.12em;color:var(--gold)}
 .pr h3{font:400 clamp(15px,1.5vw,17px)/1.2 'Cinzel',serif;letter-spacing:.2em;text-transform:uppercase;color:var(--navy)}
 .pr p{grid-column:2;font-size:clamp(18px,1.7vw,21px);line-height:1.45;color:rgba(10,22,40,.78);margin-top:9px}
+.st.vonly{padding-block:clamp(68px,11vh,120px)}
+.vals{list-style:none;display:flex;flex-direction:column;align-items:center;gap:18px}
+.vals li{font:400 17px/1.2 'Cinzel',serif;letter-spacing:.22em;margin-right:-.22em;text-transform:uppercase;color:var(--navy);white-space:nowrap}
+@media (min-width:900px){
+ .vals{flex-direction:row;justify-content:center;gap:0}
+ .vals li{font-size:clamp(15px,1.4vw,18px);letter-spacing:.2em;margin-right:0}
+ .vals li+li::before{content:"";display:inline-block;width:4px;height:4px;border-radius:50%;background:var(--gold);vertical-align:middle;margin:0 1.4em 0 1.2em;transform:translateY(-.12em)}
+}
 @media (min-width:900px){
  .row{grid-template-columns:240px 1fr;gap:40px}
  .pr{grid-template-columns:1fr 1fr}
