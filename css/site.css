@@ -57,3 +57,16 @@ body{background:var(--navy);color:var(--cream);font-family:'EB Garamond',Georgia
 .cl .arrows{width:56px;height:auto;display:block;margin:0 auto}
 .cl p{font-size:clamp(17px,1.6vw,20px);line-height:1.5;color:rgba(245,241,235,.78);max-width:26em;margin:30px auto 0}
 .cl .label{color:rgba(245,241,235,.46);line-height:2;margin-top:clamp(44px,7vh,72px);letter-spacing:.26em;font-size:9.5px}
+
+/* v6: Concordia in Deo, four arrows, garnet diamonds (Nov 2026) */
+.concord::before{display:none}
+.cmotto{font-size:13px;letter-spacing:.18em;line-height:1.85}
+.concord .arrows4{width:96px;height:auto;display:block;margin:18px auto 0}
+.cl p{margin-top:0}
+.vals li+li::before{content:"";display:block;width:5px;height:5px;background:#B42E3A;transform:rotate(45deg);margin:0 auto 18px}
+.vals{gap:18px}
+@media (min-width:600px){.cmotto{font-size:14px;letter-spacing:.2em}.concord .arrows4{width:108px}}
+@media (min-width:900px){
+ .vals{gap:0}
+ .vals li+li::before{display:inline-block;width:5px;height:5px;border-radius:0;background:#B42E3A;margin:0 1.4em 0 1.2em;transform:translateY(-.14em) rotate(45deg)}
+}
